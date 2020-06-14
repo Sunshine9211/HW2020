@@ -17,8 +17,56 @@ body {
     display: flex;
 }
 
+.todo-items {
+    padding: 5px 20px; 
+}
+
+.todo-items > .task {
+    display: flex;
+    align-items: center;
+}
+
+.todo-items > .task >input {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+.todo-items > .task >label {
+    flex-grow: 1;
+}
+
+.todo-items .ctrlbar > button {
+     border: none;
+     background:none;
+     color: blue;
+     cursor: pointer;
+}
+
+
+.todo-items .ctrlbar > button:disabled {
+     color:grey;
+    /*cursor: pointer; */
+}
+
+.todo-items .ctrlbar > button:disabled:hover {
+    font-weight:unset;
+}
+
+.todo-items .ctrlbar > button:hover{
+    font-weight: bolder;
+} 
+
+
+
 .todo-editor input {
     flex-grow: 1;
     font-size: 1.2em;
     padding: 2px 5px;
+}
+
+
+
+.task.done > label {
+    text-decoration: line-through;
 }
