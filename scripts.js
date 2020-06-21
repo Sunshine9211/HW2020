@@ -16,6 +16,7 @@ function renderEditor() {
         let newTask = {
             title: inputEl.value,
             done: false,
+            important: false,
         };
         inputEl.value = "";
 
@@ -73,6 +74,16 @@ function renderTaskItems() {
         let titleEl = document.createElement("label");
         titleEl.innerText = task.title;
         itemEl.append(titleEl);
+
+        let importantEl = document.createElement("input");
+        importantEl.type = "radio";
+        importantEl.checked = task.important;
+
+        importantEl.onchange = (e) => {
+            task.important = e.target.checked;
+        }
+
+         itemEl.append(importantEl);
 
         let ctrlbarEl = renderTaskCtrlBar(tasks, i);
 
