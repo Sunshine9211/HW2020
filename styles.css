@@ -39,7 +39,7 @@ body {
 .todo-items .ctrlbar > button {
      border: none;
      background:none;
-     color: blue;
+     color: rgb(195, 0, 255);
      cursor: pointer;
 }
 
