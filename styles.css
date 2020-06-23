@@ -4,9 +4,15 @@ body {
     justify-content: center;
 
 }
+
+h1 {
+    text-align: center;
+    color: coral;
+}
+
 .todo-panel {
     width: 30em;
-    margin-top: 5em;
+    margin-top: 1em;
     min-height: 20em;
     box-shadow: 4px 6px 6px #888;
     border: 1px solid #eee;
@@ -55,6 +61,7 @@ body {
 
 .todo-items .ctrlbar > button:hover{
     font-weight: bolder;
+    color: darkblue;
 } 
 
 
@@ -69,4 +76,5 @@ body {
 
 .task.done > label {
     text-decoration: line-through;
+    color: darkslategrey;
 }
